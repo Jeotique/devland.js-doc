@@ -34,8 +34,7 @@ type collectorOptions = {
         count: number,
         time: number,
         componentType: ComponentsType, //check Types page
-        filter: Function,
-        message?: Message,
+        filter: Function
 }
 ```
 
@@ -50,10 +49,6 @@ type collectorOptions = {
 The `end` event will be emitted when the `time` is elapsed or when `count` is declared and `count` component/message response is received
 
 {% hint style="danger" %}
-`message` field in the params must be set for the [modal listener](modal-listener.md) **only**
-{% endhint %}
-
-{% hint style="danger" %}
 `type` field in the params is **automatic**, you don't need to set a value
 {% endhint %}
 
@@ -62,5 +57,5 @@ The `end` event will be emitted when the `time` is elapsed or when `count` is de
 {% endhint %}
 
 {% hint style="info" %}
-All fields in the params is optional, only `message` field is required from a [modal listener](modal-listener.md)
+All fields in the params is optional
 {% endhint %}

@@ -35,8 +35,7 @@ type collectorOptions = {
         count: number,
         time: number,
         componentType: ComponentsType, //check Types page
-        filter: Function,
-        message?: Message,
+        filter: Function
 }
 ```
 

@@ -18,10 +18,12 @@ client.on('interaction', async(interaction) => {
         required: true
     }]
     await interaction.submitModal(modal)
-    const collector = modal.createListener({message: interaction.message, time: 60000})
-    collector.on('collected', m => {
+    const collector = interaction.createListener({time: 60000})
+    collector.on('collected', async(m) => {
+        await m.deferUpdate()
         let text = m.getModalValue("first_input")
-        m.reply({content: text})
+        console.log(text)
+        interaction.channel.send({content: text})
     })
     collector.on('end', () => {
     

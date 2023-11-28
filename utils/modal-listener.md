@@ -18,7 +18,7 @@ client.on('interaction', async(interaction) => {
         required: true
     }]
     await interaction.submitModal(modal)
-    const collector = interaction.createListener({time: 60000})
+    const collector = interaction.createModalListener({time: 60000})
     collector.on('collected', async(m) => {
         await m.deferUpdate()
         let text = m.getModalValue("first_input")

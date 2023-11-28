@@ -19,11 +19,11 @@
 {% endhint %}
 
 ```javascript
-<modal>.createListener(<params>)
+<modal>.createModalListener(<params>)
 ```
 
 {% hint style="info" %}
-`createListener` allows you to get the response of a specific modal
+`createModalListener` allows you to get the response of a specific modal
 {% endhint %}
 
 **Collector params :**

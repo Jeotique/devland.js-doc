@@ -1,9 +1,5 @@
 # 👋 Install devland.js
 
-{% hint style="info" %}
-**Info :** during the installation process, some warnings will appair.
-{% endhint %}
-
 ## Installation
 
 {% content-ref url="devland.js/npm.md" %}

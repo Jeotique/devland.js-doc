@@ -36,6 +36,7 @@ rolesLifeTime: milliseconds, //will unlock <guild>.roles
 invitesLifeTime: milliseconds, //will unlock <guild>.invites
 presencesLifeTime: milliseconds, //will unlock <guild>.presences & <member>.presence
 voicesLifeTime: milliseconds, //will unlock <guild>.voicesStates & <member>.voice 
+enableAllCaches: boolean, //enable all caches of the client
 waitCacheBeforeReady: boolean, //wait for all caches enabled to be completed before emit the ready event, by default set to true
 
 // warning, for the members, roles, presences, voices & invites cache the guilds cache must be enabled too

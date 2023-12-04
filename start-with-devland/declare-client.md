@@ -6,9 +6,7 @@ _**Wanna use the shard system ? Go**_ [_**here**_](use-shards.md)_**.**_
 ```javascript
 const {Client} = require("devland.js")
 const bot = new Client({
-    intents: 259, //https://discord-intents-calculator.vercel.app
-    // or (better method) :
-    // intents: ["GUILDS", "GUILD_MEMBERS", "GUILD_PRESENCES"]
+    intents: ["GUILDS", "GUILD_MEMBERS", "GUILD_PRESENCES"]
     // or (best method) : 
     /* const {IntentFlags} = require('devland.js')
        intents: [IntentFlags.FLAGS.GUILDS, IntentFlags.FLAGS.GUILD_MEMBERS, IntentFlags.FLAGS.GUILd_PRESENCES]
